@@ -14,7 +14,7 @@ def makeFrench(informationTup):
     startTime = informationTup[2]
     endTime = informationTup[3]
     payloadNumber = informationTup[4]
-    subject = "Hey {} here is payload number {}!".format(firstName, payloadNumber)
+    subject = "Hey {} here is your French payload number {}!".format(firstName, payloadNumber)
 
     theTing = open('emails/payloads/french.html')
     myHtmlFile = BeautifulSoup(theTing,'html.parser')
@@ -50,7 +50,7 @@ def makeSpanish(informationTup):
     startTime = informationTup[2]
     endTime = informationTup[3]
     payloadNumber = informationTup[4]
-    subject = "Hey {} here is payload number {}!".format(firstName, payloadNumber)
+    subject = "Hey {} here is your French payload number {}!".format(firstName, payloadNumber)
     pageSend = open('emails/payloads/advanceSpanish.htm','r')
     tempFile = open('emails/payloads/spanishTemp.html','w')
 
